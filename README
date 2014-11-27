@@ -1,0 +1,40 @@
+Author: bestmjh47 (http://blog.naver.com/bestmjh47)
+Requirements: Java
+What-is-this? : This ports official i9500 Touchwiz-based(includeing MIUI) rom to Korean Octa-core processor Galaxy S4. This program is now at Beta version so it may contain some bugs. Use at your own risk!
+
+How to use: 1. Open terminal. 2. run miui.sh if you're porting MIUI rom. If you're not, please run otherroms.sh
+            3. If you're porting a rom with updater-script that mounts partitions with busybox, replace the mounting code into below one. And aroma installer-related files will be automatically removed(for multiboot)
+
+e.g.) run_program("/sbin/busybox", "mount", "/system");   ------->
+      mount("ext4", "EMMC", "/dev/block/mmcblk0p20", "/system");
+
+Credits: boot image multiboot ramdisk part: Grarak
+
+Known issue: Nothing. It's perfect!
+         
+What you should know: You can build any of your favorite rom with this "Port Tool" for 'ONLY' personal use. You CANNOT distribute built rom to other communities or forums. And please report this tool's bugs to bitbucket or my blog. Donations are always welcome :D 
+
+Paypal: bestmjh47@naver.com
+
+저자: bestmjh47 (http://blog.naver.com/bestmjh47)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+요구 사항: Java
+
+이 툴은 무엇인가요? 이 툴은 i9500의 터치위즈 베이스의 롬을 한국의 옥타코어 갤럭시s4 에 정상작동 하게끔 수정해 주는 역할을 합니다. 이 프로그램은 현재 베타 버전이며, 버그를 포함하고 있을 수 있습니다. 이로 인한 모든 결과는 사용자의 책입입니다!
+
+사용 방법: 1. PC에서 터미널을 엽니다. 2. port.sh를 실행합니다. 
+          3. 만약, busybox를 이용해 파티션을 마운트하는 롬을 포팅하고 있다면, 마운팅 코드를 아래의 것처럼 수정해 주세요. 또한, 아로마 인스톨러 관련 파일들은 자동적으로 제거됩니다(듀얼부팅 설치 버그를 피하기 위해서)
+
+예) run_program("/sbin/busybox", "mount", "/system");   ------->
+    mount("ext4", "EMMC", "/dev/block/mmcblk0p20", "/system");
+
+크레딧: Grarak(activekernel의 램디스크의 베이스(아이디어)지원)
+
+알려진 이슈: 없습니다! 완벽합니다~
+
+아셔야 할 사항: 이 '포팅 툴'을 가지고 당신이 선호하는 롬을 오직 '개인적인 목적'으로만 자유롭게 빌드할 수 있습니다. 당신은 빌드된 롬을 타 커뮤니티나 포럼에 배포할 수 없습니다. 그리고 이 툴의 버그들을 제 블로그나 bitbucket에 제보해 주세요. 
+기부는 언제나 감사히 받겠습니다 :D
+
+페이팔(paypal)계정: bestmjh47@naver.com
