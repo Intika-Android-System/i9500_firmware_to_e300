@@ -11,8 +11,7 @@ cd ../
 cp -rf files/boot.img port/boot.img
 
 ## BUILD zip ## 
-gedit port/system/build.prop
-gedit port/META-INF/com/google/android/updater-script
+gedit port/system/build.prop port/META-INF/com/google/android/updater-script
 echo "If this rom has additional apks or packages.. copy and paste it"
 echo "Almost done... Please modify build.prop and updater-script(refer to README) and press ENTER."
 read
