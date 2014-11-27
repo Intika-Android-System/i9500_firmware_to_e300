@@ -1,5 +1,7 @@
 Author: bestmjh47 (http://blog.naver.com/bestmjh47)
+
 Requirements: Java
+
 What-is-this? : This ports official i9500 Touchwiz-based(includeing MIUI) rom to Korean Octa-core processor Galaxy S4. This program is now at Beta version so it may contain some bugs. Use at your own risk!
 
 How to use: 1. Open terminal. 2. run miui.sh if you're porting MIUI rom. If you're not, please run otherroms.sh
