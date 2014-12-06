@@ -19,6 +19,7 @@ cd port
 rm -rf system/*~
 rm -rf META-INF/com/google/android/*~
 rm -rf META-INF/com/google/android/aroma*          ## Removes aroma installer-related files
+rm -rf META-INF/com/google/android/update-binary-installer
 cp -f ../binary/update-binary META-INF/com/google/android/update-binary  ## Replaces aroma installer updater binary
 
 zip -r ROM.zip META-INF system boot.img 
