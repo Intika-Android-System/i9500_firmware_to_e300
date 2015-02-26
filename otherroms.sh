@@ -15,7 +15,7 @@ sed -i 's/GT-I9500/SHV-E300S/g' port/system/build.prop
 sed -i 's/i9500/e300s/g' port/system/build.prop
 sed -i 's/ja3gxx/jalteskt/g' port/system/build.prop
 sed -i 's/ja3g/jalteskt/g' port/system/build.prop
-gedit port/system/build.prop port/META-INF/com/google/android/updater-script
+gedit port/META-INF/com/google/android/updater-script
 echo "Almost done... Please modify updater-script(refer to README) and press ENTER."
 read
 cd port
