@@ -24,9 +24,12 @@ cp -f telephony-common.jar ../port/system/framework/telephony-common.jar
 cd ../
 
 ## BUILD zip ## 
-gedit port/system/build.prop
+sed -i 's/GT-I9500/SHV-E300S/g' port/system/build.prop
+sed -i 's/i9500/e300s/g' port/system/build.prop
+sed -i 's/ja3gxx/jalteskt/g' port/system/build.prop
+sed -i 's/ja3g/jalteskt/g' port/system/build.prop
 gedit port/META-INF/com/google/android/updater-script
-echo "Almost done... Please modify build.prop and updater-script and press ENTER."
+echo "Almost done... Please modify updater-script and press ENTER."
 read
 cd port
 rm -rf system/*~
